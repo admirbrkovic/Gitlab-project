@@ -1,44 +1,85 @@
 
   
-
+<div class="admin-users">
  <header class="navbar navbar-static-top navbar-gitlab">
   <div class="navbar-inner">
     <div class="container">
+    <span class="separator"></span>
       <div class="app_logo">
-        <span class="separator"></span>
+      <a href="">
          <img src="<%= image_path('logo-black.png')%>" alt="">
-          
+         </a>
+          </div>
         
         <span class="separator"></span>
-        <h2>Admin Area</h2>
-      </div>
-      <h1 class="title">
         
-      </h1>
-      <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
-        <span class="sr-only">Toggle navigation</span>
-        <i class="icon-reorder"></i>
-      </button>
-      <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-          <li class="hidden-sm hidden-xs">
-            
-          </li>
-          <li class="visible-sm visible-xs">
-            
-              <i class="icon-search"></i>
-            
-          </li>
-          <li>
-            
-              
-            
-          </li>
+      
+      <h4 class="title">Admin area</h4>
+
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="hidden-sm hidden-xs">
+              <div class="search">
+                <form class="navbar-form pull-left" method="get" action="search">
+                  <input class="search-input" id="search" type="text" placeholder="Search">
+                </form>
+              </div>
+            </li>
+            <li class="visible-sm visible-xs">
+               <a href="/" class="has_bottom_tooltip" data-original-title="Search area">
+                 <i class="icon-search"></i>
+               </a>
+            </li>
+            <li class="hidden-xs">
+               <a href="/" class="has_bottom_tooltip" data-original-title="Help">
+                 <i class="fa fa-question"></i>
+               </a>
+            </li>
+            <li class="hidden-xs">
+               <a href="/" class="has_bottom_tooltip" data-original-title="Public area">
+                 <i class="fa fa-globe"></i>
+               </a>
+            </li>
+            <li class="hidden-xs">
+              <a href="/" class="has_bottom_tooltip" data-original-title="My snippets">
+                 <i class="fa fa-paste"></i>
+               </a>
+            </li>
+            <li class="hidden-xs">
+              <a href="/" class="has_bottom_tooltip" data-original-title="Admin area">
+                <i class="fa fa-cogs"></i>
+
+              </a>
+            </li>
+            <li class="hidden-xs">
+              <a href="/" class="has_bottom_tooltip" data-original-title="New project">
+               <i class="fa fa-plus"></i>
+              </a>
+            </li>
+           <li class="hidden-xs">
+               <a href="/" class="has_bottom_tooltip" data-original-title="Profile settings">
+                 <i class="fa fa-user"></i>
+              </a>
+            </li>
+             <li class="hidden-xs">
+               <a href="/" class="has_bottom_tooltip" data-original-title="Logout">
+                  <i class="fa fa-sign-out"></i>
+               </a>
+            </li>
+            <li class="hidden-xs">
+                <a href="/" class="profile-pic" id="profile-pic">
+                   <img src="<%= image_path('no_avatar.png')%>">
+            </a>
+           </li>
         </ul>
-      </div>
+     </div>
+     
+
+
     </div>
   </div>
 </header>
+</div>
 
 
 

@@ -1,8 +1,11 @@
 @import "bootstrap";
 
+.admin-users {
 
 
-
+ h4 {
+ 	padding-top: 3px;
+ }
   header {
   &.navbar-gitlab {
     margin-bottom: 0;
@@ -55,7 +58,10 @@
       border-width: 0;
       font-size: 18px;
 
-      .app_logo { margin-left: -15px; }
+      .app_logo { margin-left: -15px;
+                img {   height: 50px;
+                    width: 50px;}
+                   }
       .title {
         display: inline-block;
         overflow: hidden;
@@ -99,7 +105,8 @@
    */
   .app_logo {
     float: left;
-    margin-right: 9px;
+    margin-right: 2px;
+    
 
     a {
       float: left;
@@ -109,17 +116,27 @@
       h1 {
         margin: 0;
         background: image-url('logo-black.png') no-repeat center center;
-        background-size: 32px;
-        float: left;
-        height: 46px;
-        width: 40px;
+        background-size: 22px;
+        
+        height: 36px;
+        width: 30px;
         
         text-indent: -9999px;
       }
+       &:hover {
+      background-color: grey;
     }
-    &:hover {
-      background-color: #EEE;
     }
+   
+
+    img {
+    	height: 35px;
+    	width: 35px;
+    	margin-left: 3px;
+    	margin-top: 5px;
+
+    }
+    
   }
 
   /**
@@ -132,6 +149,7 @@
     float: left;
     margin: 0;
     margin-left: 5px;
+    margin-top: 10px;
     
   }
 
@@ -275,6 +293,8 @@
   #nprogress .spinner {
     right: 35px !important;
   }
+}
+
 }
 
 
