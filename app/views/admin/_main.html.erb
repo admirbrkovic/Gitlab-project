@@ -1,0 +1,72 @@
+<div class="container">
+  <div class="content">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="admin-filter">
+           <ul class="nav nav-pills nav-stacked">
+             <li class="active">
+               <a href="/admin/users">Active
+                 <small class="pull-right">1</small>
+               </a>
+             </li>
+             <li class="">
+               <a href="/admin/users?filter=admins">Admins
+                 <small class="pull-right">1</small>
+               </a>
+            </li>
+            <li class="">
+              <a href="/admin/users?filter=blocked">Blocked
+                <small class="pull-right">0</small>
+              </a>
+            </li>
+            <li class="">
+               <a href="/admin/users?filter=wop">Without projects
+                 <small class="pull-right">1</small>
+               </a>
+            </li>
+          </ul>
+         <hr>
+     <form accept-charset="UTF-8" action="/admin/users" class="form-inline" method="get"><div style="            margin:0;padding:0;display:inline"><input name="utf8" value="✓" type="hidden"></div>
+     <div class="form-group">
+        <input class="form-control" id="name" name="name" placeholder="Name, email or username" type="search">
+     </div>
+       <button class="btn btn-primary" type="submit"><i class="fa fa-search"></i>
+       </button>
+    </form>
+
+     <hr>
+        <a class="btn btn-cancel" href="/admin/users">Reset</a>
+      </div>
+     </div>
+   <div class="col-md-9">
+     <div class="ui-box">
+       <div class="title">
+          Users (1)
+         <div class="pull-right">
+           <a class="btn btn-new" href="/admin/users/new">New User</a>
+         </div>
+       </div>
+    <ul class="well-list">
+      <li>
+         <div class="list-item-name">
+           <i class="fa fa-user cgreen"></i>
+           <a href="/admin/users/root">Administrator</a>
+           <strong class="cred">(Admin)</strong>
+           <span class="cred">It's you!</span>
+         </div>
+        <div class="pull-right">
+          <span class="light">
+            <i class="fa fa-envelope"></i>
+            <a class="light" href="mailto:admin@local.host">admin@local.host</a>
+          </span>
+          &nbsp;
+         <a class="btn btn-small" href="/admin/users/root/edit" id="edit_user_1">Edit</a>
+        </div>
+      </li>
+   </ul>
+   </div>
+
+</div>
+</div>
+</div>
+</div>
