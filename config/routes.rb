@@ -3,8 +3,14 @@ Rails.application.routes.draw do
 	 #
   # Admin Area
   #
-  #namespace :admin do
-   #resources :users, constraints: { id: /[a-zA-Z.\/0-9_\-]+/ } 
+  namespace :admin do
+   #resources :users, constraints: { id: /[a-zA-Z.\/0-9_\-]+/ } do
+   # member do
+      #  put :team_update
+      #  put :block
+      #  put :unblock
+   #   end
+    #end
             
      
 
@@ -13,10 +19,10 @@ Rails.application.routes.draw do
       #  put :project_teams_update
      # end
     #end
-
+   
    resources :hooks, only: [:index, :create, :destroy] do
-     # get :test
-   # end
+      get :test
+    end
 
    #resources :broadcast_messages, only: [:index, :create, :destroy]
 
@@ -26,8 +32,10 @@ Rails.application.routes.draw do
      # end
    # end
 
-    root to: "dashboard#index"
+    #root to: "dashboard#index"
   end
 
 end
+
+
 
