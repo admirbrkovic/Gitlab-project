@@ -1,0 +1,712 @@
+<div class="col-md-9 issues-holder">
+  <div class="append-bottom-10">
+    <div class="check-all-holder">
+   <input class="check_all_issues left" id="check_all_issues" name="check_all_issues" type="checkbox">
+      </div>
+        <div class="issues-filters">
+          <div class="dropdown inline">
+     <a class="dropdown-toggle btn" data-toggle="dropdown" href="#">
+       <i class="fa fa-user"></i>
+      <span class="light">assignee:</span>
+       Any
+     <b class="caret"></b>
+     </a>
+    <ul class="dropdown-menu">
+<li>
+      <a href="/gitlab-org/gitlab-ce/issues?assignee_id=&amp;label_name=&amp;milestone_id=&amp;scope=all&amp;sort=&amp;state=opened">Any </a>
+      <a href="/gitlab-org/gitlab-ce/issues?assignee_id=0&amp;label_name=&amp;milestone_id=&amp;scope=all&amp;sort=&amp;state=opened">Unassigned</a>
+   </li>
+<li>
+    <a href="/gitlab-org/gitlab-ce/issues?assignee_id=5766&amp;label_name=&amp;milestone_id=&amp;scope=all&amp;sort=&amp;state=opened"><img alt="" class="avatar s16" src="https://secure.gravatar.com/avatar/3d05b760e98afb1c694cd990ec99cd3d?s=40&amp;d=mm">MrKeiKun</a></li>
+</ul>
+</div>
+    
+<div class="dropdown inline prepend-left-10">
+   <a class="dropdown-toggle btn" data-toggle="dropdown" href="#"><i class="fa fa-book"></i>
+   <span class="light">milestone:</span>Any <b class="caret"></b></a>
+  <ul class="dropdown-menu">
+<li>
+<a href="/gitlab-org/gitlab-ce/issues?assignee_id=&amp;label_name=&amp;milestone_id=&amp;scope=all&amp;sort=&amp;state=opened">Any
+</a><a href="/gitlab-org/gitlab-ce/issues?assignee_id=&amp;label_name=&amp;milestone_id=0&amp;scope=all&amp;sort=&amp;state=opened">None (backlog)
+</a></li>
+</ul>
+</div>
+<div class="pull-right">
+<div class="dropdown inline prepend-left-10">
+<a class="dropdown-toggle btn" data-toggle="dropdown" href="#">
+<span class="light">sort:</span>
+Newest
+<b class="caret"></b>
+</a>
+<ul class="dropdown-menu">
+<li>
+<a href="/gitlab-org/gitlab-ce/issues?assignee_id=&amp;label_name=&amp;milestone_id=&amp;scope=all&amp;sort=newest&amp;state=opened">Newest
+</a><a href="/gitlab-org/gitlab-ce/issues?assignee_id=&amp;label_name=&amp;milestone_id=&amp;scope=all&amp;sort=oldest&amp;state=opened">Oldest
+</a><a href="/gitlab-org/gitlab-ce/issues?assignee_id=&amp;label_name=&amp;milestone_id=&amp;scope=all&amp;sort=recently_updated&amp;state=opened">Recently updated
+</a><a href="/gitlab-org/gitlab-ce/issues?assignee_id=&amp;label_name=&amp;milestone_id=&amp;scope=all&amp;sort=last_updated&amp;state=opened">Last updated
+</a><a href="/gitlab-org/gitlab-ce/issues?assignee_id=&amp;label_name=&amp;milestone_id=&amp;scope=all&amp;sort=milestone_due_soon&amp;state=opened">Milestone due soon
+</a><a href="/gitlab-org/gitlab-ce/issues?assignee_id=&amp;label_name=&amp;milestone_id=&amp;scope=all&amp;sort=milestone_due_later&amp;state=opened">Milestone due later
+</a></li>
+</ul>
+</div>
+
+</div>
+</div>
+<div class="clearfix">
+<div class="issues_bulk_update hide">
+<form accept-charset="UTF-8" action="/gitlab-org/gitlab-ce/issues/bulk_update" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" value="✓" type="hidden"><input name="authenticity_token" value="Q/+PScGG+1KGpHkAO8SxUYzUSLPRPw5isIvu51Tnu4E=" type="hidden"></div>
+<div style="width: 100px;" id="s2id_update_status" class="select2-container"><a href="javascript:void(0)" onclick="return false;" class="select2-choice" tabindex="-1">   <span class="select2-chosen">Status</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow"><b></b></span></a><input id="s2id_autogen1" class="select2-focusser select2-offscreen" type="text"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" type="text">   </div>   <ul class="select2-results">   </ul></div></div><select class="select2-offscreen" tabindex="-1" id="update_status" name="update[status]"><option value="">Status</option><option value="open">Open</option>
+<option value="closed">Closed</option></select>
+<div id="s2id_update_assignee_id" class="select2-container ajax-project-users-select"><a href="javascript:void(0)" onclick="return false;" class="select2-choice select2-default" tabindex="-1">   <span class="select2-chosen">Assignee</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow"><b></b></span></a><input id="s2id_autogen3" class="select2-focusser select2-offscreen" type="text"><div class="select2-drop select2-display-none ajax-project-users-dropdown select2-with-searchbox">   <div class="select2-search">       <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" type="text">   </div>   <ul class="select2-results">   </ul></div></div><input tabindex="-1" class="ajax-project-users-select  select2-offscreen" data-placeholder="Assignee" data-project-id="13083" id="update_assignee_id" name="update[assignee_id]" value="" type="hidden">
+<div style="width: auto;" id="s2id_update_milestone_id" class="select2-container"><a href="javascript:void(0)" onclick="return false;" class="select2-choice" tabindex="-1">   <span class="select2-chosen">Milestone</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow"><b></b></span></a><input id="s2id_autogen2" class="select2-focusser select2-offscreen" type="text"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" type="text">   </div>   <ul class="select2-results">   </ul></div></div><select class="select2-offscreen" tabindex="-1" id="update_milestone_id" name="update[milestone_id]"><option value="">Milestone</option><option value="None (backlog)">None (backlog)</option></select>
+<input id="update_issues_ids" name="update[issues_ids]" value="" type="hidden">
+<input id="status" name="status" type="hidden">
+<button class="btn update_selected_issues btn-save" name="button" type="submit">Update issues</button>
+</form>
+
+</div>
+</div>
+</div>
+<div class="ui-box">
+<ul class="well-list issues-list">
+<li class="issue" id="issue_35415" url="/gitlab-org/gitlab-ce/issues/326">
+<div class="issue-check">
+<input class="selected_issue" data-id="35415" disabled="disabled" id="selected_issue_35415" name="selected_issue_35415" type="checkbox">
+</div>
+<div class="issue-title">
+<span class="light">#326</span>
+<span class="str-truncated">
+<a class="row_title" href="/gitlab-org/gitlab-ce/issues/326">Try to use username given by omniauth provider instead of hardcoded condition</a>
+</span>
+</div>
+<div class="issue-info">
+unassigned
+<div class="pull-right">
+<small>updated <time data-original-title="Jun 10, 2014 2:20pm" class="issue_update_ago" data-placement="bottom" data-toggle="tooltip" datetime="2014-06-10T14:20:31Z" title="">about 20 hours ago</time>
+<script>$('.issue_update_ago').timeago().tooltip()</script>
+</small>
+</div>
+<div class="issue-labels">
+<span class="label label-info">
+<i class="fa fa-tag"></i>
+omniauth
+</span>
+<span class="label label-success">
+<i class="fa fa-tag"></i>
+enhancement
+</span>
+</div>
+</div>
+<div class="issue-actions">
+</div>
+</li>
+<li class="issue" id="issue_35405" url="/gitlab-org/gitlab-ce/issues/325">
+<div class="issue-check">
+<input class="selected_issue" data-id="35405" disabled="disabled" id="selected_issue_35405" name="selected_issue_35405" type="checkbox">
+</div>
+<div class="issue-title">
+<span class="light">#325</span>
+<span class="str-truncated">
+<a class="row_title" href="/gitlab-org/gitlab-ce/issues/325">GitHub omniauth fails with blank name</a>
+</span>
+</div>
+<div class="issue-info">
+unassigned
+<div class="pull-right">
+<small>updated <time data-original-title="Jun 10, 2014 2:17pm" class="issue_update_ago" data-placement="bottom" data-toggle="tooltip" datetime="2014-06-10T14:17:30Z" title="">about 20 hours ago</time>
+<script>$('.issue_update_ago').timeago().tooltip()</script>
+</small>
+</div>
+<div class="issue-labels">
+<span class="label label-danger">
+<i class="fa fa-tag"></i>
+bug
+</span>
+<span class="label label-info">
+<i class="fa fa-tag"></i>
+omniauth
+</span>
+</div>
+</div>
+<div class="issue-actions">
+</div>
+</li>
+<li class="issue" id="issue_35270" url="/gitlab-org/gitlab-ce/issues/324">
+<div class="issue-check">
+<input class="selected_issue" data-id="35270" disabled="disabled" id="selected_issue_35270" name="selected_issue_35270" type="checkbox">
+</div>
+<div class="issue-title">
+<span class="light">#324</span>
+<span class="str-truncated">
+<a class="row_title" href="/gitlab-org/gitlab-ce/issues/324">Images are not shown in issues when a user is not logged in</a>
+</span>
+</div>
+<div class="issue-info">
+unassigned
+<span>
+<i class="fa fa-comments"></i>
+1
+</span>
+<div class="pull-right">
+<small>updated <time data-original-title="Jun 10, 2014 7:19am" class="issue_update_ago" data-placement="bottom" data-toggle="tooltip" datetime="2014-06-10T07:19:11Z" title="">a day ago</time>
+<script>$('.issue_update_ago').timeago().tooltip()</script>
+</small>
+</div>
+<div class="issue-labels">
+<span class="label label-info">
+<i class="fa fa-tag"></i>
+issues
+</span>
+<span class="label label-info">
+<i class="fa fa-tag"></i>
+ui
+</span>
+<span class="label label-danger">
+<i class="fa fa-tag"></i>
+bug
+</span>
+</div>
+</div>
+<div class="issue-actions">
+</div>
+</li>
+<li class="issue" id="issue_35197" url="/gitlab-org/gitlab-ce/issues/323">
+<div class="issue-check">
+<input class="selected_issue" data-id="35197" disabled="disabled" id="selected_issue_35197" name="selected_issue_35197" type="checkbox">
+</div>
+<div class="issue-title">
+<span class="light">#323</span>
+<span class="str-truncated">
+<a class="row_title" href="/gitlab-org/gitlab-ce/issues/323">GitLab adds path where it wasn't present.</a>
+</span>
+</div>
+<div class="issue-info">
+unassigned
+<span>
+<i class="fa fa-comments"></i>
+1
+</span>
+<div class="pull-right">
+<small>updated <time data-original-title="Jun 09, 2014 6:59pm" class="issue_update_ago" data-placement="bottom" data-toggle="tooltip" datetime="2014-06-09T18:59:37Z" title="">a day ago</time>
+<script>$('.issue_update_ago').timeago().tooltip()</script>
+</small>
+</div>
+<div class="issue-labels">
+<span class="label label-danger">
+<i class="fa fa-tag"></i>
+bug
+</span>
+</div>
+</div>
+<div class="issue-actions">
+</div>
+</li>
+<li class="issue" id="issue_35196" url="/gitlab-org/gitlab-ce/issues/322">
+<div class="issue-check">
+<input class="selected_issue" data-id="35196" disabled="disabled" id="selected_issue_35196" name="selected_issue_35196" type="checkbox">
+</div>
+<div class="issue-title">
+<span class="light">#322</span>
+<span class="str-truncated">
+<a class="row_title" href="/gitlab-org/gitlab-ce/issues/322">GitLab fails to show number for pending merge requests on busy header</a>
+</span>
+</div>
+<div class="issue-info">
+unassigned
+<span>
+<i class="fa fa-comments"></i>
+1
+</span>
+<div class="pull-right">
+<small>updated <time data-original-title="Jun 09, 2014 6:51pm" class="issue_update_ago" data-placement="bottom" data-toggle="tooltip" datetime="2014-06-09T18:51:57Z" title="">a day ago</time>
+<script>$('.issue_update_ago').timeago().tooltip()</script>
+</small>
+</div>
+<div class="issue-labels">
+<span class="label label-info">
+<i class="fa fa-tag"></i>
+ui
+</span>
+<span class="label label-danger">
+<i class="fa fa-tag"></i>
+bug
+</span>
+</div>
+</div>
+<div class="issue-actions">
+</div>
+</li>
+<li class="issue" id="issue_35056" url="/gitlab-org/gitlab-ce/issues/321">
+<div class="issue-check">
+<input class="selected_issue" data-id="35056" disabled="disabled" id="selected_issue_35056" name="selected_issue_35056" type="checkbox">
+</div>
+<div class="issue-title">
+<span class="light">#321</span>
+<span class="str-truncated">
+<a class="row_title" href="/gitlab-org/gitlab-ce/issues/321">error: hook declined to update refs</a>
+</span>
+</div>
+<div class="issue-info">
+unassigned
+<div class="pull-right">
+<small>updated <time data-original-title="Jun 11, 2014 9:24am" class="issue_update_ago" data-placement="bottom" data-toggle="tooltip" datetime="2014-06-11T09:24:17Z" title="">about an hour ago</time>
+<script>$('.issue_update_ago').timeago().tooltip()</script>
+</small>
+</div>
+<div class="issue-labels">
+<span class="label label-info">
+<i class="fa fa-tag"></i>
+6.8.1
+</span>
+</div>
+</div>
+<div class="issue-actions">
+</div>
+</li>
+<li class="issue" id="issue_34937" url="/gitlab-org/gitlab-ce/issues/320">
+<div class="issue-check">
+<input class="selected_issue" data-id="34937" disabled="disabled" id="selected_issue_34937" name="selected_issue_34937" type="checkbox">
+</div>
+<div class="issue-title">
+<span class="light">#320</span>
+<span class="str-truncated">
+<a class="row_title" href="/gitlab-org/gitlab-ce/issues/320">option to disallow accepting self created merge request by creator himself</a>
+</span>
+</div>
+<div class="issue-info">
+unassigned
+<div class="pull-right">
+<small>updated <time data-original-title="Jun 07, 2014 12:47pm" class="issue_update_ago" data-placement="bottom" data-toggle="tooltip" datetime="2014-06-07T12:47:35Z" title="">4 days ago</time>
+<script>$('.issue_update_ago').timeago().tooltip()</script>
+</small>
+</div>
+<div class="issue-labels">
+<span class="label label-info">
+<i class="fa fa-tag"></i>
+merge-requests
+</span>
+</div>
+</div>
+<div class="issue-actions">
+</div>
+</li>
+<li class="issue" id="issue_34936" url="/gitlab-org/gitlab-ce/issues/319">
+<div class="issue-check">
+<input class="selected_issue" data-id="34936" disabled="disabled" id="selected_issue_34936" name="selected_issue_34936" type="checkbox">
+</div>
+<div class="issue-title">
+<span class="light">#319</span>
+<span class="str-truncated">
+<a class="row_title" href="/gitlab-org/gitlab-ce/issues/319">rules for branch protection</a>
+</span>
+</div>
+<div class="issue-info">
+unassigned
+<div class="pull-right">
+<small>updated <time data-original-title="Jun 07, 2014 12:43pm" class="issue_update_ago" data-placement="bottom" data-toggle="tooltip" datetime="2014-06-07T12:43:14Z" title="">4 days ago</time>
+<script>$('.issue_update_ago').timeago().tooltip()</script>
+</small>
+</div>
+<div class="issue-labels">
+<span class="label label-info">
+<i class="fa fa-tag"></i>
+protected branches
+</span>
+</div>
+</div>
+<div class="issue-actions">
+</div>
+</li>
+<li class="issue" id="issue_34884" url="/gitlab-org/gitlab-ce/issues/318">
+<div class="issue-check">
+<input class="selected_issue" data-id="34884" disabled="disabled" id="selected_issue_34884" name="selected_issue_34884" type="checkbox">
+</div>
+<div class="issue-title">
+<span class="light">#318</span>
+<span class="str-truncated">
+<a class="row_title" href="/gitlab-org/gitlab-ce/issues/318">Redmine Issue Integration is broken</a>
+</span>
+</div>
+<div class="issue-info">
+unassigned
+<div class="pull-right">
+<small>updated <time data-original-title="Jun 07, 2014 3:12am" class="issue_update_ago" data-placement="bottom" data-toggle="tooltip" datetime="2014-06-07T03:12:13Z" title="">4 days ago</time>
+<script>$('.issue_update_ago').timeago().tooltip()</script>
+</small>
+</div>
+<div class="issue-labels">
+<span class="label label-info">
+<i class="fa fa-tag"></i>
+redmine
+</span>
+<span class="label label-info">
+<i class="fa fa-tag"></i>
+6.9
+</span>
+<span class="label label-danger">
+<i class="fa fa-tag"></i>
+bug
+</span>
+</div>
+</div>
+<div class="issue-actions">
+</div>
+</li>
+<li class="issue" id="issue_34757" url="/gitlab-org/gitlab-ce/issues/317">
+<div class="issue-check">
+<input class="selected_issue" data-id="34757" disabled="disabled" id="selected_issue_34757" name="selected_issue_34757" type="checkbox">
+</div>
+<div class="issue-title">
+<span class="light">#317</span>
+<span class="str-truncated">
+<a class="row_title" href="/gitlab-org/gitlab-ce/issues/317">Gitlab Merge Request for multiple packages</a>
+</span>
+</div>
+<div class="issue-info">
+unassigned
+<div class="pull-right">
+<small>updated <time data-original-title="Jun 06, 2014 10:55am" class="issue_update_ago" data-placement="bottom" data-toggle="tooltip" datetime="2014-06-06T10:55:41Z" title="">5 days ago</time>
+<script>$('.issue_update_ago').timeago().tooltip()</script>
+</small>
+</div>
+<div class="issue-labels">
+<span class="label label-info">
+<i class="fa fa-tag"></i>
+feature request
+</span>
+</div>
+</div>
+<div class="issue-actions">
+</div>
+</li>
+<li class="issue" id="issue_34655" url="/gitlab-org/gitlab-ce/issues/316">
+<div class="issue-check">
+<input class="selected_issue" data-id="34655" disabled="disabled" id="selected_issue_34655" name="selected_issue_34655" type="checkbox">
+</div>
+<div class="issue-title">
+<span class="light">#316</span>
+<span class="str-truncated">
+<a class="row_title" href="/gitlab-org/gitlab-ce/issues/316">Gitlab showing commits made to git-notes branches in both the dashboard, and network.</a>
+</span>
+</div>
+<div class="issue-info">
+unassigned
+<div class="pull-right">
+<small>updated <time data-original-title="Jun 05, 2014 7:09pm" class="issue_update_ago" data-placement="bottom" data-toggle="tooltip" datetime="2014-06-05T19:09:08Z" title="">6 days ago</time>
+<script>$('.issue_update_ago').timeago().tooltip()</script>
+</small>
+</div>
+<div class="issue-labels">
+<span class="label label-info">
+<i class="fa fa-tag"></i>
+network
+</span>
+<span class="label label-info">
+<i class="fa fa-tag"></i>
+dashboard
+</span>
+<span class="label label-info">
+<i class="fa fa-tag"></i>
+branches
+</span>
+<span class="label label-info">
+<i class="fa fa-tag"></i>
+issues
+</span>
+</div>
+</div>
+<div class="issue-actions">
+</div>
+</li>
+<li class="issue" id="issue_34348" url="/gitlab-org/gitlab-ce/issues/315">
+<div class="issue-check">
+<input class="selected_issue" data-id="34348" disabled="disabled" id="selected_issue_34348" name="selected_issue_34348" type="checkbox">
+</div>
+<div class="issue-title">
+<span class="light">#315</span>
+<span class="str-truncated">
+<a class="row_title" href="/gitlab-org/gitlab-ce/issues/315">Issues with merge request</a>
+</span>
+</div>
+<div class="issue-info">
+unassigned
+<div class="pull-right">
+<small>updated <time data-original-title="Jun 04, 2014 9:02pm" class="issue_update_ago" data-placement="bottom" data-toggle="tooltip" datetime="2014-06-04T21:02:11Z" title="">7 days ago</time>
+<script>$('.issue_update_ago').timeago().tooltip()</script>
+</small>
+</div>
+<div class="issue-labels">
+</div>
+</div>
+<div class="issue-actions">
+</div>
+</li>
+<li class="issue" id="issue_34346" url="/gitlab-org/gitlab-ce/issues/314">
+<div class="issue-check">
+<input class="selected_issue" data-id="34346" disabled="disabled" id="selected_issue_34346" name="selected_issue_34346" type="checkbox">
+</div>
+<div class="issue-title">
+<span class="light">#314</span>
+<span class="str-truncated">
+<a class="row_title" href="/gitlab-org/gitlab-ce/issues/314">Flavored Markdown aren't parsed in some situation</a>
+</span>
+</div>
+<div class="issue-info">
+unassigned
+<div class="pull-right">
+<small>updated <time data-original-title="Jun 04, 2014 8:56pm" class="issue_update_ago" data-placement="bottom" data-toggle="tooltip" datetime="2014-06-04T20:56:49Z" title="">7 days ago</time>
+<script>$('.issue_update_ago').timeago().tooltip()</script>
+</small>
+</div>
+<div class="issue-labels">
+</div>
+</div>
+<div class="issue-actions">
+</div>
+</li>
+<li class="issue" id="issue_34274" url="/gitlab-org/gitlab-ce/issues/312">
+<div class="issue-check">
+<input class="selected_issue" data-id="34274" disabled="disabled" id="selected_issue_34274" name="selected_issue_34274" type="checkbox">
+</div>
+<div class="issue-title">
+<span class="light">#312</span>
+<span class="str-truncated">
+<a class="row_title" href="/gitlab-org/gitlab-ce/issues/312">highlighting: autodetecting file type always wrong</a>
+</span>
+</div>
+<div class="issue-info">
+unassigned
+<span>
+<i class="fa fa-comments"></i>
+1
+</span>
+<div class="pull-right">
+<small>updated <time data-original-title="Jun 04, 2014 1:23pm" class="issue_update_ago" data-placement="bottom" data-toggle="tooltip" datetime="2014-06-04T13:23:36Z" title="">7 days ago</time>
+<script>$('.issue_update_ago').timeago().tooltip()</script>
+</small>
+</div>
+<div class="issue-labels">
+<span class="label label-info">
+<i class="fa fa-tag"></i>
+syntax
+</span>
+</div>
+</div>
+<div class="issue-actions">
+</div>
+</li>
+<li class="issue" id="issue_34114" url="/gitlab-org/gitlab-ce/issues/311">
+<div class="issue-check">
+<input class="selected_issue" data-id="34114" disabled="disabled" id="selected_issue_34114" name="selected_issue_34114" type="checkbox">
+</div>
+<div class="issue-title">
+<span class="light">#311</span>
+<span class="str-truncated">
+<a class="row_title" href="/gitlab-org/gitlab-ce/issues/311">Access large files via WIKI</a>
+</span>
+</div>
+<div class="issue-info">
+unassigned
+<div class="pull-right">
+<small>updated <time data-original-title="Jun 03, 2014 2:25pm" class="issue_update_ago" data-placement="bottom" data-toggle="tooltip" datetime="2014-06-03T14:25:46Z" title="">8 days ago</time>
+<script>$('.issue_update_ago').timeago().tooltip()</script>
+</small>
+</div>
+<div class="issue-labels">
+<span class="label label-info">
+<i class="fa fa-tag"></i>
+wiki
+</span>
+<span class="label label-danger">
+<i class="fa fa-tag"></i>
+bug
+</span>
+</div>
+</div>
+<div class="issue-actions">
+</div>
+</li>
+<li class="issue" id="issue_33738" url="/gitlab-org/gitlab-ce/issues/309">
+<div class="issue-check">
+<input class="selected_issue" data-id="33738" disabled="disabled" id="selected_issue_33738" name="selected_issue_33738" type="checkbox">
+</div>
+<div class="issue-title">
+<span class="light">#309</span>
+<span class="str-truncated">
+<a class="row_title" href="/gitlab-org/gitlab-ce/issues/309">500 error on rendering ReST document</a>
+</span>
+</div>
+<div class="issue-info">
+unassigned
+<div class="pull-right">
+<small>updated <time data-original-title="May 31, 2014 11:48pm" class="issue_update_ago" data-placement="bottom" data-toggle="tooltip" datetime="2014-05-31T23:48:14Z" title="">10 days ago</time>
+<script>$('.issue_update_ago').timeago().tooltip()</script>
+</small>
+</div>
+<div class="issue-labels">
+</div>
+</div>
+<div class="issue-actions">
+</div>
+</li>
+<li class="issue" id="issue_33481" url="/gitlab-org/gitlab-ce/issues/306">
+<div class="issue-check">
+<input class="selected_issue" data-id="33481" disabled="disabled" id="selected_issue_33481" name="selected_issue_33481" type="checkbox">
+</div>
+<div class="issue-title">
+<span class="light">#306</span>
+<span class="str-truncated">
+<a class="row_title" href="/gitlab-org/gitlab-ce/issues/306">LDAP user filter is not checked on user sign-in</a>
+</span>
+</div>
+<div class="issue-info">
+unassigned
+<div class="pull-right">
+<small>updated <time data-original-title="May 30, 2014 9:58am" class="issue_update_ago" data-placement="bottom" data-toggle="tooltip" datetime="2014-05-30T09:58:08Z" title="">12 days ago</time>
+<script>$('.issue_update_ago').timeago().tooltip()</script>
+</small>
+</div>
+<div class="issue-labels">
+</div>
+</div>
+<div class="issue-actions">
+</div>
+</li>
+<li class="issue" id="issue_33383" url="/gitlab-org/gitlab-ce/issues/305">
+<div class="issue-check">
+<input class="selected_issue" data-id="33383" disabled="disabled" id="selected_issue_33383" name="selected_issue_33383" type="checkbox">
+</div>
+<div class="issue-title">
+<span class="light">#305</span>
+<span class="str-truncated">
+<a class="row_title" href="/gitlab-org/gitlab-ce/issues/305">Dashboard Atom Feed Notes and MRs Have No Summary</a>
+</span>
+</div>
+<div class="issue-info">
+unassigned
+<span>
+<i class="fa fa-comments"></i>
+1
+</span>
+<div class="pull-right">
+<small>updated <time data-original-title="May 29, 2014 2:55pm" class="issue_update_ago" data-placement="bottom" data-toggle="tooltip" datetime="2014-05-29T14:55:58Z" title="">13 days ago</time>
+<script>$('.issue_update_ago').timeago().tooltip()</script>
+</small>
+</div>
+<div class="issue-labels">
+<span class="label label-danger">
+<i class="fa fa-tag"></i>
+bug
+</span>
+</div>
+</div>
+<div class="issue-actions">
+</div>
+</li>
+<li class="issue" id="issue_33379" url="/gitlab-org/gitlab-ce/issues/304">
+<div class="issue-check">
+<input class="selected_issue" data-id="33379" disabled="disabled" id="selected_issue_33379" name="selected_issue_33379" type="checkbox">
+</div>
+<div class="issue-title">
+<span class="light">#304</span>
+<span class="str-truncated">
+<a class="row_title" href="/gitlab-org/gitlab-ce/issues/304">Dashboard Atom Feed Note URLs Are Invalid</a>
+</span>
+</div>
+<div class="issue-info">
+unassigned
+<span>
+<i class="fa fa-comments"></i>
+1
+</span>
+<div class="pull-right">
+<small>updated <time data-original-title="May 29, 2014 2:36pm" class="issue_update_ago" data-placement="bottom" data-toggle="tooltip" datetime="2014-05-29T14:36:40Z" title="">13 days ago</time>
+<script>$('.issue_update_ago').timeago().tooltip()</script>
+</small>
+</div>
+<div class="issue-labels">
+<span class="label label-danger">
+<i class="fa fa-tag"></i>
+bug
+</span>
+</div>
+</div>
+<div class="issue-actions">
+</div>
+</li>
+<li class="issue" id="issue_33360" url="/gitlab-org/gitlab-ce/issues/303">
+<div class="issue-check">
+<input class="selected_issue" data-id="33360" disabled="disabled" id="selected_issue_33360" name="selected_issue_33360" type="checkbox">
+</div>
+<div class="issue-title">
+<span class="light">#303</span>
+<span class="str-truncated">
+<a class="row_title" href="/gitlab-org/gitlab-ce/issues/303">Dashboard Atom Feed IDs Are Global Instead of Project-Specific</a>
+</span>
+</div>
+<div class="issue-info">
+unassigned
+<span>
+<i class="fa fa-comments"></i>
+1
+</span>
+<div class="pull-right">
+<small>updated <time data-original-title="May 29, 2014 12:30pm" class="issue_update_ago" data-placement="bottom" data-toggle="tooltip" datetime="2014-05-29T12:30:31Z" title="">13 days ago</time>
+<script>$('.issue_update_ago').timeago().tooltip()</script>
+</small>
+</div>
+<div class="issue-labels">
+<span class="label label-danger">
+<i class="fa fa-tag"></i>
+bug
+</span>
+</div>
+</div>
+<div class="issue-actions">
+</div>
+</li>
+
+</ul>
+</div>
+<div class="pull-right">
+<span class="issue_counter">157</span>
+issues for this filter
+</div>
+<div class="gl-pagination">
+<ul class="pagination">
+
+<li class="page active">
+<a href="/gitlab-org/gitlab-ce/issues?scope=all&amp;state=opened">1</a>
+</li>
+
+<li class="page">
+<a href="/gitlab-org/gitlab-ce/issues?page=2&amp;scope=all&amp;state=opened" rel="next">2</a>
+</li>
+
+<li class="page">
+<a href="/gitlab-org/gitlab-ce/issues?page=3&amp;scope=all&amp;state=opened">3</a>
+</li>
+
+<li class="page">
+<a href="/gitlab-org/gitlab-ce/issues?page=4&amp;scope=all&amp;state=opened">4</a>
+</li>
+
+<li class="page">
+<a href="/gitlab-org/gitlab-ce/issues?page=5&amp;scope=all&amp;state=opened">5</a>
+</li>
+
+<li class="page">
+<span class="page gap">
+…
+</span>
+</li>
+
+<li class="next">
+<a href="/gitlab-org/gitlab-ce/issues?page=2&amp;scope=all&amp;state=opened" rel="next">Next ›</a>
+</li>
+
+</ul>
+</div>
+</div>
+
+

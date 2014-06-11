@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<%= render 'layouts/head.html.erb'%>
+<body class="ui_basic admin">
+  <%= render 'layouts/head_panel.html.erb'%>
+  <nav class="main-nav">
+    <%= render 'layouts/smallnav2.html.erb'%>
+  </nav>
+  <div class="container">
+  <div class="content">
+    <%= render 'layouts/issues_nav.html.erb'%>
+    
+    <%= render 'layouts/shared/filter.html.erb'%>
+    <%= render 'layouts/body_page.html.erb'%>
+      <%=yield%>
+    </div>
+  </div>
+</body>
+</html>
