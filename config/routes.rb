@@ -35,16 +35,38 @@ Rails.application.routes.draw do
     #
   # Dashboard Area
   #
-  resource :dashboard, controller: "dashboard", only: [:show] do
+# resource :dashboard, controller: "dashboard", only: [:show] do
+ #   member do
+  #    get :projects
+   #   get :issues
+   #   get :merge_requests
+  #  end
+ # end
+
+ #
+  # Profile Area
+  #
+  resource :profile, only: [:show, :update] do
     member do
-      get :projects
-      get :issues
-      get :merge_requests
+      get :history
+      get :design
+
+      put :reset_private_token
+      put :update_username
     end
+
+  end
+
+ 
+  
+
+  
+
+  
   end
 
 
-end
+
 
 
 
