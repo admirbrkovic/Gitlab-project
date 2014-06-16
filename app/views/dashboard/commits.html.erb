@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<%= render 'layouts/head.html.erb'%>
+<body class="ui_basic admin">
+  <%= render 'layouts/head_panel.html.erb'%>
+  
+  <div class="container">
+  <div class="content">
+    <%= render 'layouts/commits_navbar.html.erb'%>
+    <%= render 'layouts/commits_body.html.erb'%>
+      <%=yield%>
+    </div>
+  </div>
+</body>
+</html>
