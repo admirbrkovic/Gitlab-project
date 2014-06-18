@@ -42,6 +42,7 @@ resource :dashboard, controller: "dashboard", only: [:show] do
       get :merge_requests
       get :commits
       get :home
+      get :product
     end
   end
 
