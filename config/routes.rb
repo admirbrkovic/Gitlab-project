@@ -43,6 +43,8 @@ resource :dashboard, controller: "dashboard", only: [:show] do
       get :commits
       get :home
       get :product
+      get :product2
+      get :input
     end
   end
 

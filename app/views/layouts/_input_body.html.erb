@@ -1,0 +1,90 @@
+<div class="container">
+   <div class="content">
+      <h3 class="page-title">Novi proizvod</h3>
+      <p class="light">Svako polje mora biti popunjeno da bi proizvod bio dodat u bazu podataka.</p>
+    
+    <hr>
+         <form accept-charset="UTF-8" action="/profile" class="edit_user form-horizontal" enctype="multipart/form-data" id="edit_user_36935" method="post"><div style="display:none"><input name="utf8" value="✓" type="hidden"><input name="_method" value="put" type="hidden"><input name="authenticity_token" value="2suX2V7cmKepjMnQ3Mnn0coowmw+82Uw8Ud6hUHH+1Q=" type="hidden"></div><div class="row">
+
+    <div class="col-md-7">
+       <div class="form-group">
+           <label class="control-label" for="user_name">Proizvod</label>
+               <div class="col-sm-10">
+                   <input class="form-control" id="user_name" name="user[name]" required="required" value="" type="text">
+                   
+               </div>
+          </div>
+
+   <div class="form-group">
+       <label class="control-label" for="user_email">Proizvođač</label>
+            <div class="col-sm-10">
+                 <input class="form-control" id="user_email" name="user[email]" required="required" value="" type="text">
+                      <span class="help-block">Fabrika ili koncern koji posjeduje licencu za proizvodnju.</span>
+             </div>
+         </div>
+
+    <div class="form-group">
+        <label class="control-label" for="user_skype">Barkod</label>
+            <div class="col-sm-10">
+                <input class="form-control" id="user_skype" name="user[skype]" value="" type="text"></div>
+         </div>
+
+    <div class="form-group">
+         <label class="control-label" for="user_linkedin">Količina</label>
+             <div class="col-sm-10">
+             <input class="form-control" id="user_linkedin" name="user[linkedin]" value="" type="text"></div>
+       </div>
+    
+    <div class="form-group">
+        <label class="control-label" for="user_twitter">Energetska vrijednost</label>
+            <div class="col-sm-10">
+            <input class="form-control" id="user_twitter" name="user[twitter]" value="" type="text"></div>
+        </div>
+
+     <div class="form-group">
+         <label class="control-label" for="user_website_url">Sastojci</label>
+             <div class="col-sm-10">
+                 <input class="form-control" id="user_website_url" name="user[website_url]" value="" type="text"></div>
+            </div>
+
+     <div class="form-group">
+         <label class="control-label" for="user_bio">Nutritivne vrijednosti</label>
+             <div class="col-sm-10">
+                 <textarea class="form-control" id="user_bio" maxlength="250" name="user[bio]" rows="6"></textarea>
+                  <span class="help-block">Samo su validni podatci koji se nalaze na ambalaži.</span>
+            </div>
+       </div>
+    </div>
+
+    <div class="col-md-5">
+        <div class="light-well">
+             <img alt="" class="avatar s160" width="200" src="<%= image_path('upload2.png')%>
+             ">
+        <div class="clearfix">
+            <div class="profile-avatar-form-option">
+                <p class="light">Ovde možeš da postavoš sliku proizvoda. </p>
+         <hr>
+
+     <a class="choose-btn btn btn-small js-choose-user-avatar-button">
+         <i class="fa fa-paper-clip"></i>
+            <span>Izaberi sliku...</span></a>&nbsp;
+                 <input class="js-user-avatar-input hidden" id="user_avatar" name="user[avatar]" type="file">
+                 <div class="light">Maksimalna veličina slike je do 500KB.</div>
+              </div>
+          </div>
+       </div>
+
+     <div class="bs-callout bs-callout-info">
+         <h4>Napomena!</h4>
+         <p>U slučaju greške pri unosu podataka, imate mogućnost naknadne promjene ponovnim pristupom profilu proizvoda.</p>
+     </div>
+    </div>
+  </div>
+
+      <div class="form-actions">
+         <input class="btn btn-save" name="commit" value="Sačuvaj promjene" type="submit">
+      </div>
+   </form>
+
+   </div>
+  </div>
